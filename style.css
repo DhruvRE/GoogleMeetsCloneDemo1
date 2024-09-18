@@ -1,0 +1,542 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+
+:root{
+    --font-large: 3rem;
+    --font-medium: 1.5rem;
+    --font-small: .6rem;
+
+    --color-primary: #1A6DDE;
+    --color-dark: #1F1F1F;
+    --color-gray: #444746;
+    --color-light-gray: #5F6368;
+
+    --font-family-main: "Google Sans", "Roboto", Arial, sans-serif, Ubuntu;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family-main);
+    margin: 0;
+    padding: 0;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.header-main{
+    height: 4rem;
+    width: 100%
+}
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.meets-logo-nav{
+    width: fit-content;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: .2rem;
+}
+
+.meets-logo-nav span{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-light-gray);
+    padding: 0px 0px 2px 0px;
+}
+
+.extras-nav{
+    width: fit-content;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    color: var(--color-light-gray);
+    gap: 1rem;
+}
+.extras-nav li{
+    cursor: pointer;
+}
+
+.extras-nav li span{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.meet-main{
+    height: calc(100vh - 20vh);
+    display: flex;
+    align-items: center;
+}
+
+.section-join-meets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0rem 5rem;
+    height: 100%;
+}
+.section-join-meets h1{
+    font-weight: 400;
+    color: var(--color-dark);
+    font-size: var(--font-large);
+    margin-bottom: .5rem;
+    width: 90%;
+}
+.connect-span-text{
+    font-weight: 400;
+    color: var(--color-light-gray);
+    font-size: var(--font-medium);
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+.join-section-area{
+    display: flex; 
+    flex-direction: row ;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.border-line{
+    margin-top: 2rem;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.meets-dropdown-main{
+    
+}
+
+.my-meets-drop-button{
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: large;
+    width: fit-content;
+    padding: .5rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+    height: 50px;
+    position: relative;
+}
+
+.new-meets-text{
+    font-weight: 500;
+    padding: 0;
+}
+.my-meets-drop{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    flex-wrap: nowrap;
+    flex: none;
+    width: 40%;
+    border-radius: 10px;
+}
+.drop-coint{
+    width: 100%;
+}
+.my-meets-drop .each-list-hidden{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    padding: .8rem .2rem;
+    margin: 0;
+    
+}
+.hidden-item-2{
+    text-align: center;
+    width: 100%;
+}
+
+.my-meets-drop .each-list-hidden:hover{
+    background-color: #897e7e99;
+}
+
+.box-hide{
+    display: none;
+}
+.material-symbols-outlined{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 1rem;
+    text-align: left;
+    width: fit-content;
+}
+.code-input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.code-input-inner{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 5px;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 0px 5px;
+    
+}
+.code-input{
+    height: 40px;
+    width: 150px;
+    border: none;
+}
+
+.code-input::-webkit-outer-spin-button,
+.code-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.join-button{
+    font-weight: 600;
+    font-size: large;
+    border: none;
+    cursor:pointer;
+}
+.img-display{
+    display: none;
+}
+.img-text{
+    display: none;
+}
+.images-info{
+    height: 100%;
+    width: 100%;
+}
+.active{
+    display: block;
+}
+.section-info-meets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.section-image-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.content-box{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+}
+.image-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.info-images{
+    
+}
+
+.img-text{
+    text-align: center;
+    width: 100%;
+    font-size: medium;
+}
+
+
+.prev-cont{
+    height: 100%;
+}
+.next-cont{
+    height: 100%;
+}
+
+.learn-section{
+    margin-top: 1rem;
+    font-size: small;
+    color: var(--color-light-gray);
+    display: none;
+}
+
+.prev-button{
+    border: none;
+    cursor: pointer;
+}
+.next-button{
+    border: none;
+    cursor: pointer;
+}
+
+.l-r-button-animation{
+    transition: 200ms ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+.l-r-button-animation:active{
+    background-color: #5F6368;
+    opacity: 0.5;
+}
+
+.joining-tab{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: #1F1F1F;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #fff;
+}
+
+.display-loading{
+    display: none;
+}
+
+.hidden{
+    display: block;
+}
+/* meetingRoom? */
+.meeting-room-main{
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 99;
+    background-color: #202124;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.video-section{
+    height: 100%;
+    width: 100%;
+}
+.logo-video-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.avatar-main{
+    position: absolute;
+    width: 20%;
+}
+
+.toggle-video{
+    display: "none";
+}
+
+.video-stream{
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+.video-main{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.user-name-bottom{
+    position: absolute;
+    font-size: larger;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+}
+.bottom-bar-section{
+    position: absolute;
+    bottom: 0;
+    z-index: 102;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.icons-main{
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.interaction-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon-interaction-video{
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(95,99,104);
+    background-color: #6D2E2A;
+    padding: .5rem;
+    border-radius: 50%;
+    flex: none;
+    cursor: pointer;
+}
+.icon-interaction-audio{
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(95,99,104);
+    background-color: #6D2E2A;
+    padding: .5rem;
+    border-radius: 50%;
+    flex: none;
+    cursor: pointer;
+}
+.icon-interaction-end{
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #434649;
+    padding: .5rem;
+    border-radius: 50%;
+    flex: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.audio-off{
+    display: block;
+}
+.audio-on{
+    display: none;
+}
+
+.cam-on{
+    display: none;
+    z-index: 105;
+}
+.cam-off{
+    display: block;
+    z-index: 106;
+}
+
+.toggle-avatar{
+    display: block;
+}
+/* meetingRoom? */
+/*  */
+@media (max-width : 1024px) {
+    body{
+        height: 100dvh;
+        width: 100dvw;
+    }
+    .header-main{
+        width: 100%;
+        height: 4rem;
+    }
+    .nav-main{
+        display: flex;
+        gap: 3rem;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    .meet-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-join-meets{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .video-call-text{
+        display: none;
+    }
+    .connect-span-text{
+        display: none;
+        
+    }
+    .join-section-area{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .meets-dropdown-main{
+        width: fit-content;
+    }
+    .code-input-box{
+        width: fit-content;
+    }
+    .image-text-container{
+        display: flex;
+        margin-bottom: 2rem;
+  
+    }
+    .learn-section{
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width : 551px){
+    .extras-nav{
+        display: none;
+    }
+    .nav-main{
+        margin: 1rem 1rem;
+    }
+    .image-text-container{
+        margin-bottom: 5rem;
+    }
+    .learn-section{
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 1rem;
+    }
+}
